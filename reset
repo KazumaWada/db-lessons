@@ -1,0 +1,4 @@
+#!/bin/bash
+# データを最初の状態に戻す (DELETE や UPDATE で壊しても大丈夫)
+cd "$(dirname "$0")"
+docker compose down -v && docker compose up -d && echo "起動中… 20秒ほど待ってから ./sql を使ってね"

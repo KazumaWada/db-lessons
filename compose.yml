@@ -1,0 +1,18 @@
+# 練習用の PostgreSQL。mottodekiru の Postgres (5432) とぶつからないようにポートは 5433
+services:
+  db:
+    image: postgres:18
+    container_name: db-lessons
+    environment:
+      POSTGRES_USER: learner
+      POSTGRES_PASSWORD: learner
+      POSTGRES_DB: shop
+      TZ: Asia/Tokyo
+      PGTZ: Asia/Tokyo
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - pgdata:/var/lib/postgresql
+volumes:
+  pgdata:
