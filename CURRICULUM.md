@@ -6,7 +6,7 @@
 ## 第1部 SQLを自分で書く
 - [x] 1-1 SELECT・WHERE・ORDER BY・LIMIT(ウォームアップ)
 - [x] 1-2 WHEREをくわしく(AND/OR・IN・BETWEEN・LIKE)
-- [ ] 1-3 INSERT・UPDATE・DELETE
+- [x] 1-3 INSERT・UPDATE・DELETE
 - [ ] 1-4 NULLの扱い
 - [ ] 1-5 関数とCASE(文字列・数値・日付)
 - [ ] 1-6 第1部の総合問題
